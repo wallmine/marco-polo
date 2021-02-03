@@ -14,8 +14,8 @@ if rails_env
   IRB.conf[:PROMPT][:RAILS_ENV] = {
       :PROMPT_I => "#{current_app}(#{rails_env})> ",
       :PROMPT_N => "#{current_app}(#{rails_env})> ",
-      :PROMPT_S => nil,
-      :PROMPT_C => "?> ",
+      :PROMPT_S => "#{current_app}(#{rails_env})* ",
+      :PROMPT_C => "#{current_app}(#{rails_env})%i ",
       :RETURN => "=> %s\n"
   }
 
